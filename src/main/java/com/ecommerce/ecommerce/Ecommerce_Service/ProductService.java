@@ -4,12 +4,14 @@ import com.ecommerce.ecommerce.Ecommerce_RepositoryInterface.CategoryRepository;
 import com.ecommerce.ecommerce.Ecommerce_RepositoryInterface.ProductRepository;
 import com.ecommerce.ecommerce.Entity.Category;
 import com.ecommerce.ecommerce.Entity.Product;
+import com.ecommerce.ecommerce.dto.InventoryWithProductAndCategoryDto;
 import com.ecommerce.ecommerce.dto.ProductDto;
 import com.ecommerce.ecommerce.dto.ProductWithCategoryDto;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -22,6 +24,9 @@ public class ProductService {
 
     @Autowired
     private ProductRepository productRepository;
+//    public List<ProductJoinsTableDto> getProductJoinsTableDto(){
+//        return productRepository.findProductJoinsTableDto();
+//    }
 
 
     public Product saveData (ProductDto productDto){
