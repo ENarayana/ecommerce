@@ -1,7 +1,7 @@
 package com.ecommerce.ecommerce.Ecommerce_RepositoryInterface;
 
 import com.ecommerce.ecommerce.Entity.Product;
-import com.ecommerce.ecommerce.dto.InventoryWithProductAndCategoryDto;
+//import com.ecommerce.ecommerce.dto.InventoryWithProductAndCategoryDto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
